@@ -1,3 +1,66 @@
 .App {
   text-align: center;
+  background-image: url("./assets/espacio.gif");
+  height: 100vh; 
+  width: 100vw; 
+}
+
+
+/* --------  NAVBAR ------------ */
+.navbarStyle{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2, 0, 36, 0.133) 0%, rgba(149, 32, 147, 0.348) 35%, rgba(26, 24, 78, 0.429) 99%);
+  font-size: larger;
+}
+.navbar-link{
+  text-decoration: none !important;
+
+}
+
+
+
+
+
+
+/* --------  HOME ------------ */
+.divHome{
+  margin-top: 100px;
+}
+.divHome .title{
+  font-weight: 900;
+  color: rgb(253, 217, 255);
+  font-weight: bold;
+}
+.sub-portfolio{
+  font-family: monospace;
+}
+
+
+.line {
+  margin-top: 60px;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;transform: translateY(-50%);
+}
+/*Animation*/
+.anim-typewriter {
+  animation: typewriter 4s steps(34) 1s 1 normal both,
+  blinkTextCursor 500ms steps(36) infinite normal;
+}
+@keyframes typewriter {
+  from {
+        width: 0;
+  }
+  to {
+        width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+        border-right-color: transparent;
+  }
 }
