@@ -1,8 +1,12 @@
 .App {
   text-align: center;
-  background-image: url("./assets/espacio.gif");
-  height: 100vh; 
-  width: 100vw; 
+  background-image: url("./assets/espacio3.gif");
+  /* background-repeat: no-repeat;  */
+  /* background-size: cover;
+  background-position: center; */
+}
+.main-height {
+  height: 100vh;
 }
 
 
@@ -21,34 +25,36 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 0.133) 0%, rgba(149, 32, 147, 
 /* --------  HOME ------------ */
 .divHome{
   margin-top: 100px;
+  height: 100vh;
 }
 .divHome .title{
   font-weight: 900;
-  color: rgb(253, 217, 255);
+  color: rgba(255, 143, 210, 0.9);
+  text-shadow: 1px 5px 3px rgba(255, 252, 252, 0.844);
   font-weight: bold;
 }
+/*-------------- Animación TypeWriting Home ----------------*/
 .sub-portfolio{
   font-family: monospace;
 }
 
-
 .line {
-  margin-top: 60px;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  margin-top: 50px;
+  margin-left : 115px;
+  border-right:  solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
-  overflow: hidden;transform: translateY(-50%);
+  overflow: hidden;
 }
-/*Animation*/
 .anim-typewriter {
-  animation: typewriter 4s steps(34) 1s 1 normal both,
-  blinkTextCursor 500ms steps(36) infinite normal;
+  animation: typewriter 4s steps(32) 1s 1 normal both,
+  blinkTextCursor 800ms steps(32) infinite normal;
 }
 @keyframes typewriter {
   from {
         width: 0;
   }
   to {
-        width: 16em;
+        width: 14em;
   }
 }
 
